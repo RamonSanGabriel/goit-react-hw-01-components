@@ -1,0 +1,59 @@
+.profile {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.description {
+  width: 130px;
+  background-color: #dbdce3;
+}
+img {
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: rgb(68, 68, 180);
+}
+.details {
+  padding: 4px 0;
+  width: 130px;
+}
+p {
+  margin: 4px 0;
+}
+ul {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.stats {
+  padding: 10px;
+}
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 0;
+}
+.tag {
+  font-size: 0.75rem;
+}
+.location {
+  composes: tag;
+}
+.liFollowers {
+  margin: 2px;
+}
+.label {
+  composes: tag;
+}
+.quantity {
+  font-size: 0.75rem; /* 14px */
+  font-weight: bold;
+}

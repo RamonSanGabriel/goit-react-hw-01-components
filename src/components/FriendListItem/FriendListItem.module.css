@@ -1,0 +1,17 @@
+.friendListItem {
+  display: flex;
+}
+.status {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: green;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}
