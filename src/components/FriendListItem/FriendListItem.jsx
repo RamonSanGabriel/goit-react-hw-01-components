@@ -7,8 +7,8 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
     <li className={css.friendListItem}>
       <span className={dynamicClassName}></span>
-      <img src={avatar} alt="" width="70" />
-      <p>{name}</p>
+      <img src={avatar} className={css.avatar} alt="" width="70" />
+      <p className={css.name}>{name}</p>
     </li>
   );
 };

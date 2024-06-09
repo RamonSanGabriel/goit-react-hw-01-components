@@ -4,43 +4,28 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <div>
-          <img
-            src={avatar}
-            alt="User avatar"
-            className={css.avatar}
-            width="70"
-          />
-        </div>
-        <div className={css.details}>
-          <p className={css.username}>{username}</p>
-          <p className={css.tag}>@{tag}</p>
-          <p className={css.location}>{location}</p>
-        </div>
-      </div>
+        <img src={avatar} alt="User avatar" className={css.avatar} width="70" />
+        <p className={css.username}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
 
-      <ul className={css.stats}>
-        <li className={css.liFollowers}>
-          <span className={css.label}>Followers</span>
-          <li>
+        <ul className={css.stats}>
+          <li className={css.item}>
+            <span className={css.label}>Followers</span>
             <span className={css.quantity}> {stats.followers}</span>
           </li>
-        </li>
 
-        <li className={css.liViews}>
-          <span className={css.label}>Views</span>
-          <li>
+          <li className={css.item}>
+            <span className={css.label}>Views</span>
             <span className={css.quantity}> {stats.views}</span>
           </li>
-        </li>
 
-        <li classNames={css.liLikes}>
-          <li>
+          <li className={css.liItem}>
             <span className={css.label}>Likes</span>
+            <span className={css.quantity}> {stats.likes}</span>
           </li>
-          <span className={css.quantity}> {stats.likes}</span>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 };

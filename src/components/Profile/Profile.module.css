@@ -1,7 +1,6 @@
 .profile {
   display: flex;
-  width: 350px;
-  flex-direction: column;
+  width: 200px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -10,50 +9,46 @@
   padding-bottom: 30px;
 }
 .description {
-  width: 130px;
+  width: 100%;
   background-color: #dbdce3;
 }
-img {
-  margin: 10px auto;
+.avatar {
+  margin: 20px auto 0;
   border-radius: 50%;
   background-color: rgb(68, 68, 180);
 }
-.details {
-  padding: 4px 0;
-  width: 130px;
-}
-p {
-  margin: 4px 0;
-}
-ul {
-  display: flex;
-  gap: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-}
-.stats {
-  padding: 10px;
-}
 .username {
-  font-size: 1rem;
+  margin: 10px 0;
   font-weight: bold;
-  padding: 4px 0;
 }
 .tag {
-  font-size: 0.75rem;
+  margin-top: 10px;
+  color: rgb(145, 143, 143);
 }
 .location {
-  composes: tag;
+  color: grey;
+  margin: 10px 0;
 }
-.liFollowers {
-  margin: 2px;
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  font-size: 0.75rem;
+  background: #bfbebe;
+}
+.item {
+  padding: 10px;
+  border-top: 1px solid #0f0f4f;
+  border-right: 1px solid black;
+}
+.liItem {
+  padding: 10px;
+  border-top: 1px solid black;
 }
 .label {
-  composes: tag;
+  margin-bottom: 10px;
+  color: grey;
 }
 .quantity {
-  font-size: 0.75rem; /* 14px */
   font-weight: bold;
 }
